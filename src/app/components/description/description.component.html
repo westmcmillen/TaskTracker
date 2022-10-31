@@ -1,0 +1,6 @@
+<span
+  class="flex items-center ml-2 md:ml-0 select-none text-xs md:text-base w-full"
+  [ngClass]="{ 'line-through': task.status === 'Completed' }"
+  (dblclick)="check()">
+  {{ task.description }}
+</span>
