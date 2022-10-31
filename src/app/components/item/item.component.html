@@ -1,0 +1,20 @@
+<li
+  class="flex md:gap-4 bg-neutral-50 hover:bg-neutral-100 items-center p-1 md:px-4 md:py-2"
+  [ngClass]="{
+    'border-y border-neutral-300': index % 2,
+    '!bg-emerald-100 border-emerald-300 hover:!bg-emerald-100':
+      task.status === 'Completed'
+  }">
+  <app-counter
+    [task]="task"
+    [index]="index"></app-counter>
+  <app-checkmark [task]="task"></app-checkmark>
+  <app-star [task]="task"></app-star>
+  <app-description
+    [task]="task"
+    class="grow"></app-description>
+  <app-archive
+    *ngIf="href === '/tasks'"
+    [task]="task"></app-archive>
+  <app-trashcan [task]="task"></app-trashcan>
+</li>
