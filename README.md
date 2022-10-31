@@ -8,7 +8,7 @@ TaskTracker was design and developed by West McMillen in October 2022 using Type
 
 ## Server
 
-You will need to setup a postgres database on your local machine. The database should bbe named 'task_tracker'. Inside this database, you will need to create a table named 'task' and another table named 'archive'. Both tables should have the following schema:
+To begin, you will need to setup a postgres database on your local machine. The database should be named 'task_tracker'. Inside this database, you will need to create a table named 'task' and a second table named 'archive'. Both tables should have the following schema:
 
 1. id: varchar
 2. created_at: timestamp
@@ -23,4 +23,4 @@ The server should be run on port 5432
 
 In the root folder, run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-In the server folder, run `npm run server` for a dev server.
+In the root folder, run `npm run server` for a dev server. The server will be listening on `http://localhost:5000/`. The server will automatically reload if you change any of the source files.
