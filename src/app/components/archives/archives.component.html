@@ -1,0 +1,10 @@
+<h2
+  class="bg-neutral-900 text-xs md:text-sm font-bold w-full p-2 text-center text-neutral-50 select-none">
+  Archives
+</h2>
+<ul class="h-full overflow-y-auto">
+  <app-item
+    *ngFor="let task of tasks; index as index"
+    [task]="task"
+    [index]="index"></app-item>
+</ul>
