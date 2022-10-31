@@ -1,0 +1,12 @@
+<button
+  class="aspect-square flex items-center justify-center hover:bg-neutral-200 rounded w-8"
+  [ngClass]="{
+    'hover:!bg-emerald-200': task.status === 'Completed',
+    'pointer-events-none': href === '/archives'
+  }"
+  (click)="href === '/tasks' ? star() : null">
+  <fa-icon
+    [icon]="faStar"
+    size="xs"
+    [ngClass]="{ 'text-amber-600': task.important }"></fa-icon>
+</button>
