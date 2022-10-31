@@ -1,0 +1,16 @@
+<form
+  class="bg-neutral-200 flex flex-col gap-1 md:gap-2 md:p-4"
+  (ngSubmit)="submit()">
+  <input
+    type="text"
+    placeholder="Enter a Task"
+    class="bg-neutral-200 border-b-4 border-neutral-300 focus:border-neutral-800 focus:outline-none h-12 md:h-16 text-xs md:text-base text-center md:text-left"
+    name="description"
+    autocomplete="off"
+    [(ngModel)]="description" />
+  <button
+    type="submit"
+    class="hidden md:block border font-bold h-12 md:h-16 rounded bg-neutral-800 hover:bg-neutral-900 text-neutral-50 text-xs md:text-base">
+    Add Task
+  </button>
+</form>
