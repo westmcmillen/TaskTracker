@@ -17,6 +17,8 @@ You will need to setup a postgres database on your local machine. The database s
 5. status: varchar
 6. important: bool
 
+The server should be run on port 5432
+
 ## Run
 
 In the root folder, run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
