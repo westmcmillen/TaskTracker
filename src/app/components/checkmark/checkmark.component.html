@@ -1,0 +1,12 @@
+<button
+  class="aspect-square flex items-center justify-center hover:bg-neutral-200 rounded w-8"
+  [ngClass]="{
+    'hover:!bg-emerald-200': task.status === 'Completed',
+    'pointer-events-none': href === '/archives'
+  }"
+  (click)="href === '/tasks' ? check() : null">
+  <fa-icon
+    [icon]="task.status === 'Completed' ? faCheck : faCircleSmall"
+    size="xs"
+    [ngClass]="{ 'text-emerald-600': task.status === 'Completed' }"></fa-icon>
+</button>
