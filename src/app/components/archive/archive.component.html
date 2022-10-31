@@ -1,0 +1,8 @@
+<button
+  class="aspect-square flex items-center justify-center hover:bg-neutral-200 rounded w-8"
+  [ngClass]="{ 'hover:!bg-emerald-200': task.status === 'Completed' }"
+  (click)="archive(task)">
+  <fa-icon
+    [icon]="faArchive"
+    size="xs"></fa-icon>
+</button>
