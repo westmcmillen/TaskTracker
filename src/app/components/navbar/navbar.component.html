@@ -1,12 +1,16 @@
-<nav class="bg-neutral-300 flex gap-1 md:gap-4 p-1 md:px-4 md:py-4">
-  <app-link
-    class="grow"
-    routerLink="/tasks"
-    [icon]="faPenToSquare"
-    [label]="'Tasks'"></app-link>
-  <app-link
-    class="grow"
-    routerLink="/archives"
-    [icon]="faArchive"
-    [label]="'Archives'"></app-link>
+<nav class="bg-neutral-100 md:px-4 md:py-4">
+  <div class="flex border border-neutral-300 rounded">
+    <app-link
+      class="grow md:rounded-l overflow-clip"
+      [active]="href === '/tasks'"
+      routerLink="/tasks"
+      [icon]="faPenToSquare"
+      [label]="'Tasks'"></app-link>
+    <app-link
+      class="grow md:rounded-r overflow-clip"
+      [active]="href === '/archives'"
+      routerLink="/archives"
+      [icon]="faArchive"
+      [label]="'Archives'"></app-link>
+  </div>
 </nav>
