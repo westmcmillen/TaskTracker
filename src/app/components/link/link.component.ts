@@ -9,4 +9,5 @@ import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 export class LinkComponent {
   @Input() label: string = '';
   @Input() icon: IconDefinition = {} as IconDefinition;
+  @Input() active: boolean = false;
 }
