@@ -17,7 +17,7 @@ To begin, you will need to setup a postgres database on your local machine. The 
 5. status: varchar
 6. important: bool
 
-The server should be run on port 5432
+The database should configured to port 5432
 
 ## Run
 
