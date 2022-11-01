@@ -2,6 +2,8 @@
 
 TaskTrack is a full-stack application to manage your daily tasks.
 
+![title](./task-tracker.png)
+
 ## Development
 
 TaskTracker was design and developed by West McMillen in October 2022 using TypeScript, Angular, Node.js, Express, and PostgresSQL.
